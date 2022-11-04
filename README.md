@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Serviço de mapas
+
+Para utilizar o serviço de mapas, você deverá inserir sua key na tag <script> do arquivo "src/index.html", conforme fora explicitado abaixo:
+
+![image](https://user-images.githubusercontent.com/63269683/199889409-a1511e4a-32d1-46c4-8f23-a3f21e5fd457.png)
+
