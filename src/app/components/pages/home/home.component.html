@@ -1,0 +1,38 @@
+<div class="home-container">
+    <div class="search-container">
+        <h2>Lista de Clientes</h2>
+    <form class="form-comp">
+        
+        <input 
+            type="text"
+            placeholder="Busque um cliente..."
+            (input)="search($event)"    
+        >
+    </form>
+    </div>
+
+    <div class="lista">
+    <table class="tb-container">
+        <tr class="tb-title">
+            <td> Nome</td>
+            <td> CEP</td>
+            <td> Cidade</td>
+            <td> UF </td>
+            <td class="tb-utils">Ações</td>
+        </tr>
+      
+         <tr class="tb-rows" *ngFor="let c of clientes">
+            <td>{{c.nome}}</td>
+            <td>{{c.cep}}</td>
+            <td>{{c.cidade}}</td>
+            <td>{{c.uf}}</td>
+            <td class="tb-actions">
+    
+                <button class="remove-btn" (click)="removeHandler(c.idCliente)">
+                    <fa-icon [icon]="faTrash"></fa-icon>
+                </button>
+            </td>
+         </tr>
+    </table>
+    </div>
+</div>

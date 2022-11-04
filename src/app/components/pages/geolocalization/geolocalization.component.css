@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1%;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 1%;
+}
+
+
+.info{
+    background-color: transparent;
+}
+
+.mark{
+    color: green;
+}

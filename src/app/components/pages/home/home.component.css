@@ -1,0 +1,135 @@
+h2{
+ margin-left:33%;
+ margin-bottom: 10px;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista{
+    
+    width: 98%;
+    min-height: 4.1vh;
+    margin-left: 0%;
+}
+
+li{
+    margin-right: 1em;
+    list-style: none;
+}
+
+.tb-container{
+    margin-left: 0%;
+    width: 100%;
+}
+
+.tb-utils{
+    text-align: center;
+    background-color: #173708;
+    width: 6%;
+}
+
+.tb-title{
+    width: 110%;
+    background-color: #173708;
+    color: #efefef;
+    border: 2px solid #efefef;
+}
+
+.tb-title td{
+    padding: 0.2% 0.5%;
+    color: #efefef;
+}
+
+.tb-rows td{
+    padding: 0.2%;
+    transition: 0.4s;
+    background-color:  #dddddd;
+}
+
+.tb-rows:hover > td{
+    padding: 0.2%;
+    transition: 0.4s;
+    background-color: #3f7922;
+    color: #efefef;
+    cursor:pointer;
+}
+
+.tb-actions{
+    background-color: transparent;
+    transition: 0.4s;
+
+}
+
+.icon-pen path{
+    transition: 0.4s;
+    color: #efefef;
+}
+
+.tb-actions:hover > .icon-pen{
+    color: white;
+}
+
+.icon-trash path{
+   color: red;
+}
+
+.search-container {
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+
+.form-comp{
+    background-color: transparent;
+    margin-bottom: -1em;
+}
+
+.search-container {
+    width: 30%;
+    position: relative;
+}
+
+.search-container fa-icon{
+    position: absolute;
+    margin-top: 12%;
+    top: 10px;
+    left: 8px;
+}
+
+.search-container input{
+    padding: .5em;
+    width: 100%;
+    text-align: center;
+}
+
+.remove-btn{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.remove-btn path{
+    color: red;
+}
+
+
+.edit-btn{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+
+

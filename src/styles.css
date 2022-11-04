@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria;
+    box-sizing: border-box;
+    color: #444;
+}
+
+a{
+    text-decoration: none;
+    color:#444;
+    transition: .4s;
+}
+
+a:hover{
+    color: #90cf6f;
+}
+
+/*Formulário*/
+form{
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    background-color: #d3f6c1;
+    padding: .8em;
+    border-radius: 10px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-group label{
+    font-weight: bold;
+    font-size: .8em;
+    margin-bottom: .4em;
+}
+
+.form-group input{
+    padding: .6em;
+    color: #777;
+    font-size: 0.8em;
+    border-radius: 10px;
+    border: solid 1px;
+}
+
+input[type="submit"]{
+    background-color: #113c0e;
+    color: #efefef;
+    border: 2px solid transparent;
+    padding: 0.6em 1em;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 0.9em;
+    cursor: pointer;
+    align-self: center;
+    transition: .4s;
+}
+
+input[type="submit"]:hover{
+  color: #90cf6f;
+  background-color: #061f04;
+  color: #efefef;
+}
+
+.validation-error p{
+    color: #dc3545;
+    margin-top: 0.4em;
+    border-left: 3px solid #dc3545;
+    padding-left: 0.2em;
+}
+
+.remove-btn{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.remove-btn path{
+    color: black;
+}
+
+.remove-btn:hover path{
+    color: red;
+}
+
+
+
+.edit-btn{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.edit-btn path{
+    color: black;
+}
+
+.edit-btn:hover path{
+    color: white;
+}
+
+.mark path{
+    color: green;
+}

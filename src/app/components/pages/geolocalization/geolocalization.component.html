@@ -1,0 +1,21 @@
+<div class="container">
+<h1>Geolocalização dos clientes</h1>
+
+<google-map height="400px"
+            width="750px"
+            [center]="center"
+            [zoom]="zoom">
+  <map-marker class="mark"
+              #marker="mapMarker"
+              *ngFor="let markerPosition of markerPositions"
+              [position]="markerPosition"
+              (mapClick)="openInfoWindow(marker, markerPosition)"></map-marker>
+  <map-info-window class="info">
+     <h4>{{title}}</h4> 
+     <h5>CEP: {{cep}}</h5> 
+     <h5>Cidade {{cidade}}</h5> 
+     <h5>Estado: {{estado}}</h5> 
+  </map-info-window>
+</google-map>
+
+</div>
